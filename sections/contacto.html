@@ -17,22 +17,37 @@
 
 <body>
     <!-- Header menu de navegacion -->
-    <header class="header" id="header">
-        <nav class="navegador d-flex justify-content-between align-items-center">
-            <a href="./index.html" class="logo d-flex align-items-center">
-            <img src="../img/icon1.png" alt="Logo de la empresa" class="logo-img">
-            <span class="second-color">Gra</span>cilis
-            </a>
-            <i class="fa-solid fa-bars" style="color: #030303;"></i>
-            <ul class=" d-flex justify-content-end m-0">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./cuidados.html">Cuidados</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md bg">
+                <a href="./index.html" class="navbar-brand fs-3 ms-3 text-black">
+                    <img src="../img/icon1.png" alt="Logo de la empresa" class="logo-img my-2" width="38">
+                    <span class="second-color">Gra</span>cilis
+                </a>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#btn">
+            <i class="bx bx-menu bx-md"></i></button></button>
+            <div class="collapse navbar-collapse ul-bg" id="btn">
+                <ul class="navbar-nav ms-auto text-black">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link mx-3 text-black fs-5">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./productos.html" class="nav-link mx-3 text-black fs-5">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cuidados.html" class="nav-link mx-3 text-black fs-5">Cuidados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nosotros.html" class="nav-link mx-3 text-black fs-5">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link mx-3 text-black fs-5">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <!-- contenido principal -->
     <main class="main">
         <div>
