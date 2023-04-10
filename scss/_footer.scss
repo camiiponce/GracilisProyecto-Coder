@@ -1,0 +1,49 @@
+footer {
+    background-color: #adecb03d;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.frase{
+    font-size: 25px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.frase p{
+    font-size: 18px;
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.pie a{
+    color: #000;
+}
+.pie h3{
+    text-decoration: underline;
+}
+.pie ul{
+    list-style: none;
+}
+.pie ul li a{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pie a:hover{
+    color: #f38597;
+}

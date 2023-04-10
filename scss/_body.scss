@@ -1,0 +1,16 @@
+/*BODY*/
+
+body{
+    background: $bg-color;
+    font-family: 'Monserrat', sans-serif;
+    .titulo-galeria{
+    font-size: 30px;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    }
+}
+

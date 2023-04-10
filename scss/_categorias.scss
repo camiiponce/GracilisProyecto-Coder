@@ -1,0 +1,44 @@
+.card{
+    background:  #9394922a;
+    box-shadow: 0 6px 20px 2px rgba(132, 132, 132, 0.415);
+    border-radius: 1rem;
+    .card-tittle{
+        text-decoration: none;
+    }
+    .nombre-categoria{
+        position: absolute;
+        text-decoration: none;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color:#1c1c1c;
+        background: #b6c2b966;
+        text-align: center;
+    }
+}
+.card:hover{
+    border: 1px solid #98aea1bc;
+    transform: matrix(-3deg);
+}
+
+@media(max-width:1145px){
+    .nombre-categoria{
+        font-size: 18px;
+    }
+}
+@media(max-width:800px){
+    .nombre-categoria{
+        font-size: 15px;
+    }
+}
+@media(max-width:680px){
+    .nombre-categoria{
+        font-size: 12px;
+    }
+}
+@media(max-width:570px){
+    .nombre-categoria{
+        font-size: 0px;
+    }
+}

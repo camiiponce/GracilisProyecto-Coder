@@ -1,0 +1,80 @@
+.titulo-nosotros{
+    font-size: 30px;
+    text-decoration: underline;
+    padding: 10px;
+}
+.p-nosotros{
+    margin: 10px 80px;
+    text-align: justify;
+}
+
+.card-nosotros{
+
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nombre-card{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            color:#d544d5;
+            background: rgba(182, 194, 185, 0.4);
+            text-align: center;
+        }
+    }
+    .back{
+        transform: perspective(600px) rotateY(180deg);
+        background: linear-gradient(135deg, $bg-color, #ffc0cbe9);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5 10px #000;
+        .link{
+            border-top: solid 1px #e88ce8;
+            height: 50px;
+            line-height: 50px;
+            a{
+                color:#a036a0;
+                font-size: 20px;
+            }
+        }
+        .nombre-card{
+            font-size: 28px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+        p{
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+    }
+}
+.card-nosotros:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card-nosotros:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}

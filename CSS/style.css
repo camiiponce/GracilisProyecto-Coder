@@ -5,9 +5,8 @@
   box-sizing: border-box;
 }
 
-/*HEADER*/
 .second-color {
-  color: rgb(243, 133, 151);
+  color: #f38597;
 }
 
 .bg {
@@ -30,7 +29,6 @@ nav .nav-item a:hover {
   color: #f38597 !important;
 }
 
-/*ENCABEZADO O PORTADA*/
 .encabezado-img {
   background-image: url(../img/portada.jpg);
   width: 100%;
@@ -58,6 +56,8 @@ nav .nav-item a:hover {
 @media (max-width: 800px) {
   .encabezado-img {
     height: 300px;
+    width: 100%;
+    object-fit: cover;
   }
   .encabezado-img h1 {
     font-size: 45px;
@@ -66,13 +66,28 @@ nav .nav-item a:hover {
     font-size: 24px;
   }
 }
+@media (max-width: 600px) {
+  .encabezado-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .encabezado-img h1 {
+    justify-content: left;
+    font-size: 35px;
+  }
+  .encabezado-img p {
+    justify-content: left;
+    font-size: 18px;
+    margin-top: 0px;
+  }
+}
 /*BODY*/
 body {
   background: rgba(206, 224, 213, 0.5098039216);
   font-family: "Monserrat", sans-serif;
 }
-
-.titulo-galeria {
+body .titulo-galeria {
   font-size: 30px;
   display: flex;
   padding-top: 25px;
@@ -82,14 +97,24 @@ body {
   margin-top: 35px;
 }
 
-/*CATEGORIAS*/
 .card {
   background: rgba(147, 148, 146, 0.1647058824);
-  box-shadow: 0 6px 20px 2px rgba(197, 173, 171, 0.899);
+  box-shadow: 0 6px 20px 2px rgba(132, 132, 132, 0.415);
   border-radius: 1rem;
 }
 .card .card-tittle {
   text-decoration: none;
+}
+.card .nombre-categoria {
+  position: absolute;
+  text-decoration: none;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #1c1c1c;
+  background: rgba(182, 194, 185, 0.4);
+  text-align: center;
 }
 
 .card:hover {
@@ -97,103 +122,73 @@ body {
   transform: matrix(-3deg);
 }
 
-/*PRODUCTOS DESTACADOS*/
+@media (max-width: 1145px) {
+  .nombre-categoria {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .nombre-categoria {
+    font-size: 15px;
+  }
+}
+@media (max-width: 680px) {
+  .nombre-categoria {
+    font-size: 12px;
+  }
+}
+@media (max-width: 570px) {
+  .nombre-categoria {
+    font-size: 0px;
+  }
+}
 .titulo-destacados {
   margin: 20px;
 }
 
-/*PRODUCTOS*/
 .titulo-productos {
-  justify-content: center;
   font-size: 30px;
-  padding: 40px;
   text-decoration: underline;
+  padding: 10px;
 }
 
 .sub-titulo {
   font-size: 20px;
-  background-color: #ffe6ea;
+  background-color: rgba(182, 194, 185, 0.4);
   padding: 10px 5px;
 }
 
-.box-img {
-  width: 350px;
-  border: 2px solid;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 20px;
+.btn {
+  border-color: black;
+  color: black;
 }
 
-.box-img img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.btn:hover {
+  border-color: black;
+  background-color: rgba(243, 213, 218, 0.8705882353);
 }
 
-.contenido-img {
-  margin: 10px;
-  padding-bottom: 30px;
-}
-
-.contenido-img button {
-  color: #000;
-  text-align: center;
-  font-size: 15px;
-  background-color: rgba(176, 245, 202, 0.6862745098);
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-/*CUIDADOS*/
-.titulo-principal {
-  font-size: 25px;
-  padding: 40px;
+.titulo-cuidados {
+  font-size: 30px;
   text-decoration: underline;
+  padding: 10px;
 }
 
-.titulo-destacados {
-  margin: 10px;
+.titulo-texto {
+  text-decoration: underline;
+  font-size: 22px;
+  padding: 40px 0 10px 0;
 }
 
-.tarjetas-cuidados {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(249, 237, 239, 0.8941176471);
+.parrafo {
   text-align: justify;
-  width: 100%;
-  height: 250px;
-  padding: 20px;
-  margin: 10px;
-  border: 2px solid;
-  border-radius: 5px;
+  margin: 10px 80px;
 }
 
-.tarjetas-cuidados img {
-  width: 450px;
-  height: 250px;
-  margin-top: 20px;
-  object-fit: cover;
-}
-
-.cuidados-titulo {
-  text-decoration: underline;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.cuidados.desc {
-  display: flex;
-}
-
-/*NOSOTROS*/
 .titulo-nosotros {
-  font-size: 25px;
-  padding: 40px;
+  font-size: 30px;
   text-decoration: underline;
+  padding: 10px;
 }
 
 .p-nosotros {
@@ -201,7 +196,78 @@ body {
   text-align: justify;
 }
 
-/*CONTACTO*/
+.card-nosotros {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+.card-nosotros .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card-nosotros .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.card-nosotros .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-nosotros .front .nombre-card {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #d544d5;
+  background: rgba(182, 194, 185, 0.4);
+  text-align: center;
+}
+.card-nosotros .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: linear-gradient(135deg, rgba(206, 224, 213, 0.5098039216), rgba(255, 192, 203, 0.9137254902));
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5 10px #000;
+}
+.card-nosotros .back .link {
+  border-top: solid 1px #e88ce8;
+  height: 50px;
+  line-height: 50px;
+}
+.card-nosotros .back .link a {
+  color: #a036a0;
+  font-size: 20px;
+}
+.card-nosotros .back .nombre-card {
+  font-size: 28px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.card-nosotros .back p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.card-nosotros:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-nosotros:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 .body {
   background: rgba(206, 224, 213, 0.511);
   background-size: 100vw 100vh;
@@ -294,9 +360,8 @@ textarea {
   height: 450px;
 }
 
-/* FOOTER */
 footer {
-  background-color: rgba(123, 123, 123, 0.1725490196);
+  background-color: rgba(173, 236, 176, 0.2392156863);
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   display: flex;
