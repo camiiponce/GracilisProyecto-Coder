@@ -1,0 +1,8 @@
+@mixin subtitulo ($bg, $color, $font-size){
+    font-size: $font-size;
+    color: $color;
+    background-color: $bg;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    padding: 10px 5px;
+}

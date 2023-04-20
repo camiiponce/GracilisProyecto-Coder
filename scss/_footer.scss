@@ -1,48 +1,58 @@
 footer {
     background-color: #adecb03d;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
 }
-.frase{
-    font-size: 25px;
-    width: 500px;
+.contenido{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-.frase p{
-    font-size: 18px;
+    flex-wrap: wrap; 
+    text-align: center; 
+    justify-content: space-between;
+    margin: auto;
+    .frase{
+        font-size: 25px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        p{
+            font-size: 18px;
+        }
+    }
 }
 .pie{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-.pie a{
-    color: #000;
-}
-.pie h3{
-    text-decoration: underline;
-}
-.pie ul{
-    list-style: none;
-}
-.pie ul li a{
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    padding: 40px;
+    text-align: center;
+    align-items: flex-start;
+    h3{
+        text-decoration: underline;
+        margin-bottom: 30px;
+        color: #000;
+        font-weight: 600;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        margin-top: 10px;
+        color: #000;
+    }
+    .fa-brands{
+        color: #f38597;
+        margin-right: 5px;
+        font-size: 22px;
+    }
+    .fa-solid{
+        color: #f38597;
+        margin-right: 5px;
+        font-size: 22px;
+    }
+    
 }
 .pie a:hover{
     color: #f38597;

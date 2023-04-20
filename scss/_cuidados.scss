@@ -1,7 +1,16 @@
 .titulo-cuidados{
-    font-size: 30px;
-    text-decoration: underline;
-    padding: 10px;
+    width: 100%;
+    text-align: center;
+    h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        background-image: linear-gradient(46deg, #2b862b , #e59ca8, #2b862b, #e59ca8);
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }
 .titulo-texto{
     text-decoration: underline;
